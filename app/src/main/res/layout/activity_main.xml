@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CBE8CA"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frameApples"
+        android:layout_width="411dp"
+        android:layout_height="445dp"
+        android:layout_marginTop="28dp"
+        android:background="#B3F4B2"
+        android:foregroundTint="#272B28"
+        android:foregroundTintMode="multiply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameApplesStorage"
+        android:layout_width="419dp"
+        android:layout_height="263dp"
+        android:layout_marginTop="15dp"
+        android:background="#B3F4B2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameApples"
+        app:layout_constraintVertical_bias="0.717">
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

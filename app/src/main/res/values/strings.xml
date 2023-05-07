@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">appFragmentsApple</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="send_apple">Отправлено</string>
+    <string name="no_send_apple">Не отправлено</string>
+    <string name="choose_apple">Выберите вид яблок</string>
+    <string name="input_apple">Введите количество яблок</string>
+</resources>

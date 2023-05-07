@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentAppleStorage">
+
+       <androidx.constraintlayout.widget.Guideline
+           android:id="@+id/guidelineLeftVert"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           app:layout_constraintGuide_percent="0.25" />
+
+       <androidx.constraintlayout.widget.Guideline
+           android:id="@+id/guidelineRightVert"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           app:layout_constraintGuide_percent="0.756691" />
+
+       <androidx.constraintlayout.widget.Guideline
+           android:id="@+id/guidelineTopHor"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           app:layout_constraintGuide_end="262dp" />
+
+       <androidx.constraintlayout.widget.Guideline
+           android:id="@+id/guidelineBottomHor"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           app:layout_constraintGuide_end="104dp" />
+
+       <androidx.constraintlayout.widget.Guideline
+           android:id="@+id/guidelineAppels"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           app:layout_constraintGuide_end="192dp" />
+
+       <androidx.constraintlayout.widget.Guideline
+           android:id="@+id/guidelineCounts"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           app:layout_constraintGuide_end="156dp" />
+
+       <TextView
+           android:id="@+id/textStorage"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:text="Склад Яблок"
+           android:textSize="20sp"
+           app:layout_constraintEnd_toStartOf="@+id/guidelineRightVert"
+           app:layout_constraintHorizontal_bias="0.463"
+           app:layout_constraintStart_toStartOf="@+id/guidelineLeftVert"
+           app:layout_constraintTop_toTopOf="@+id/guidelineTopHor" />
+
+       <TextView
+           android:id="@+id/textGreenApple"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="28dp"
+           android:text="Зеленые"
+           app:layout_constraintEnd_toStartOf="@+id/textRedApple"
+           app:layout_constraintStart_toStartOf="@+id/guidelineLeftVert"
+           app:layout_constraintTop_toTopOf="@+id/guidelineAppels" />
+
+       <TextView
+           android:id="@+id/textRedApple"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginEnd="28dp"
+           android:text="Красные"
+           app:layout_constraintEnd_toStartOf="@+id/guidelineRightVert"
+           app:layout_constraintTop_toTopOf="@+id/guidelineAppels" />
+
+       <TextView
+           android:id="@+id/textCountGreen"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="68dp"
+           android:text="0"
+           app:layout_constraintBottom_toTopOf="@+id/guidelineBottomHor"
+           app:layout_constraintStart_toStartOf="@+id/guidelineLeftVert"
+           app:layout_constraintTop_toTopOf="@+id/guidelineCounts" />
+
+       <TextView
+           android:id="@+id/textCountRed"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginEnd="58dp"
+           android:text="0"
+           app:layout_constraintBottom_toTopOf="@+id/guidelineBottomHor"
+           app:layout_constraintEnd_toStartOf="@+id/guidelineRightVert"
+           app:layout_constraintHorizontal_bias="1.0"
+           app:layout_constraintStart_toEndOf="@+id/textCountGreen"
+           app:layout_constraintTop_toTopOf="@+id/guidelineCounts" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
