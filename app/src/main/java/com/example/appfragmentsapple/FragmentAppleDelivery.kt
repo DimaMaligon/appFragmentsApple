@@ -25,16 +25,16 @@ class FragmentAppleDelivery : Fragment() {
         binding.apply {
             buttonSend.setOnClickListener {
                 if(checkGreenApple.isChecked){
-                    dataModel.greenApples.value = true
+                    dataModel.greenApple.value = true
                     textStatusSending.text = resources.getString(R.string.send_apple)
                 }
                 else if(checkRedApple.isChecked){
-                    dataModel.redApples.value = true
+                    dataModel.redApple.value = true
                     textStatusSending.text = resources.getString(R.string.send_apple)
                 }
                 else {
-                    dataModel.greenApples.value = false
-                    dataModel.redApples.value = false
+                    dataModel.greenApple.value = false
+                    dataModel.redApple.value = false
                     textStatusSending.text = resources.getString(R.string.no_send_apple)
                     Toast.makeText(activity, resources.getString(R.string.choose_apple), Toast.LENGTH_SHORT).show()
                 }
@@ -45,7 +45,7 @@ class FragmentAppleDelivery : Fragment() {
                         Toast.makeText(activity, resources.getString(R.string.input_apple), Toast.LENGTH_SHORT).show()
                     }
                 }
-                dataModel.countApples.value = countApple.toInt()
+                dataModel.countApple.value = countApple.toInt()
             }
         }
     }

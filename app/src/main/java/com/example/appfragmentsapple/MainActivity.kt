@@ -3,16 +3,15 @@ package com.example.appfragmentsapple
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import androidx.activity.viewModels
 import com.example.appfragmentsapple.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    lateinit var binding: ActivityMainBinding
+    lateinit var bindingMain: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        bindingMain = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(bindingMain.root)
 
         openFragment(FragmentAppleDelivery.newInstance(), R.id.frameApples)
         openFragment(FragmentAppleStorage.newInstance(), R.id.frameApplesStorage)
